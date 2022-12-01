@@ -49,8 +49,8 @@ export default function Login() {
               </div>
                 
           </div>
-          <div className="mt-12  flex justify-center pt-96">
-          <p className="text-base text-[#eee] xl:text-center"> copyrights &copy; 2022 Admin.</p>
+          <div className="mt-12 flex justify-start pt-56 m-20">
+          <p className="text-base text-[#eee] xl:text-center"> Copyrights &copy; 2022 Admin.</p>
         </div>
         </div>
        
@@ -63,7 +63,7 @@ export default function Login() {
                 <h2 className='text-4xl font-bold text-center py-6'>Connexion.</h2>
                 <div className='flex flex-col py-2'>
                     <label>Email</label>
-                    <input className='border p-2' type="email"  placeholder='entrer votre adress email'/>
+                    <input className='border p-2' type="email"  placeholder='Entrer Votre Adress Email'/>
                 </div>
                 <div className='flex flex-col py-2'>
                     <label>Password</label>
@@ -71,8 +71,8 @@ export default function Login() {
                 </div>
                 <button className='border w-full my-5 py-2 bg-[#046db5] hover:bg-indigo-500 text-white'>Connexion</button>
                 <div className='flex justify-between'>
-                    <p className='flex items-center'><input className='mr-2' type="checkbox" /> Se souvenir de moi</p>
-                    <p>Creer un compte?</p>
+                    <p className='flex items-center'><input className='mr-2' type="checkbox" /> Se Souvenir De Moi</p>
+                    <p>Creer Un Compte?</p>
                 </div>
             </form>
         </div>
