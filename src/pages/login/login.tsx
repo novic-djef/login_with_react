@@ -7,7 +7,7 @@ import React from 'react'
 export default function Login() {
   return (
     <div className='grid grid-cols-1 sm:grid-cols-2 '>
-        <div className='hidden sm:block bg-[#00a8de]'>
+        <div className='hidden sm:block bg-[#046db5]'>
         <div className="md:col-span-1">
               <div className="mt-4 flex items-center space-x-5 m-4 ">          
                 <span className="inline-block h-12 w-12 overflow-hidden rounded-full bg-gray-100">
@@ -49,7 +49,7 @@ export default function Login() {
               </div>
                 
           </div>
-          <div className="mt-12 flex justify-start pt-46 m-20">
+          <div className="mt-12 flex justify-start pt-36 m-20">
           <p className="text-base text-[#eee] xl:text-center"> Copyrights &copy; 2022 Admin.</p>
         </div>
         </div>
