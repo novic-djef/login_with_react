@@ -33,6 +33,18 @@ export default function Alert() {
             >
               <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6">
                 <div>
+                <div className="container mx-auto m-4">
+               <div className="relative w-full">
+                    <div className="w-full flex justify-between px-16 py-4">
+                        <button className="w-8 h-8 bg-green-600 rounded-2xl text-white transition duration-300 hover:bg-green-600 disabled:bg-gray-400">1</button>
+                        <button className="w-8 h-8 bg-green-600 rounded-2xl text-white transition duration-300 hover:bg-green-600 disabled:bg-gray-400">2</button>
+                        <button className="w-8 h-8 bg-green-600 rounded-2xl text-white transition duration-300 hover:bg-green-600 disabled:bg-gray-400">3</button>
+                    </div>
+                    <div className="w-full px-16 -mt-9">
+                        <div className="w-full h-[8px] bg-green-600"></div>
+                    </div>
+                </div>
+            </div>
                   <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
                     <CheckIcon className="h-6 w-6 text-green-600" aria-hidden="true" />
                   </div>
@@ -51,7 +63,7 @@ export default function Alert() {
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
-                    onClick={() => setOpen(false)}
+                    
                   >
                    <Link to="/">Terminer?</Link> 
                   </button>

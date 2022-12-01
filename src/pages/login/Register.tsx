@@ -13,10 +13,12 @@ export default function Register(){
 <>
 
 <section className="bg-gray-50 min-h-screen flex items-center justify-center">
-
   <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-5xl p-3 items-center"> 
     <div className="md:w-1/2 px-8 md:px-12">
-      <h2 className="font-bold text-2xl text-[#002D74]">Incription</h2>
+    
+
+      <h2 className="font-bold text-2xl flex justify-center text-[#002D74]">Incription</h2>
+      
       <p className="text-xs mt-4 text-[#002D74]">Entrez vos informations ici... </p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
@@ -24,6 +26,12 @@ export default function Register(){
           {errors.email && <p className="font-bold text-sm text-[#ff2e2e]" >le nom est obligatoire</p>}
         <input className="p-2 rounded-xl border" type="number" name="telephone" placeholder=" votre numero de telephone" {...register('telephone', {required: true})}/>
           {errors.email && <p className="font-bold text-sm text-[#ff2e2e]" >le numero de telephone est obligatoire</p>}
+          <select name="" id="" className="p-2 rounded-xl border text-gray-700">
+            <option value="" className="first-letter:" >quel est votre stature</option>
+            <option value="" className="text-gray-900">Super-Admin</option>
+            <option value="">Controleur?</option>
+            <option value="">Comptable?</option>
+          </select>
         <input className="p-2 rounded-xl border" type="email" name="email" placeholder="votre Email" {...register('email', {required: true})}/>
           {errors.email && <p className="font-bold text-sm text-[#ff2e2e]" >l'adress mail est obligatoire</p>}
         <div className="relative">
@@ -40,13 +48,13 @@ export default function Register(){
 
       <div className="mt-3 text-xs flex justify-between items-center text-[#00a8de]">
         <p>vous avez deja un compte?</p>
-        <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300" > <Link to="/">connexion</Link></button>
+        <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300" > <Link to="/">Se Connecter</Link></button>
       </div>
     </div>
 
 
     <div className="md:block hidden w-1/2">
-      <img className="rounded-2xl" src="https://th.bing.com/th/id/OIP.e80W8ypMa8NkDmOMNSAZjwHaEZ?pid=ImgDet&w=572&h=340&rs=1" />
+      <img className="rounded-2xl" src="https://app.kkiapay.me/assets/signup-stepone-bj.svg?inline" />
     </div>
   </div>
 

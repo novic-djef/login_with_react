@@ -12,13 +12,13 @@ export default function Index(){
     return(
 <>
 
-
 <section className="bg-gray-50 min-h-screen flex items-center justify-center">
 
   <div className="bg-gray-100 flex rounded-2xl shadow-lg max-w-5xl p-3 items-center"> 
     <div className="md:w-1/2 px-8 md:px-12">
-      <h2 className="font-bold text-2xl text-[#002D74]">Connexion</h2>
-      <p className="text-xs mt- text-[#002D74]">Si vous avez deja inscrit alors connectez vous ici</p>
+      
+      <h2 className="font-bold text-2xl flex justify-center text-[#002D74]">Connexion</h2>
+      <p className="text-xs mt- text-[#002D74]">Entrez les informations de connexion a votre compte...</p>
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4">
         <input className="p-2 mt-8 rounded-xl border" type="email" name="email" placeholder="votre Email " {...register('email', {required: true})}/>
@@ -31,7 +31,7 @@ export default function Index(){
             <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
           </svg>
         </div>
-        <button className="bg-[#046db5] rounded-xl text-white py-2 hover:scale-105 duration-300"><Link to="/app">connection</Link> connection</button>
+        <button className="bg-[#046db5] rounded-xl text-white py-2 hover:scale-105 duration-300"><Link to="/app">connection</Link> </button>
       </form>
       <div className="mt-6 grid grid-cols-3 items-center text-gray-400">
         <hr className="border-gray-400"/>
@@ -53,13 +53,13 @@ export default function Index(){
 
       <div className="mt-3 text-xs flex justify-between items-center text-[#00a8de]">
         <p>vous n'avez Pas de compte?</p>
-        <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300" ><Link to="/register">S'incrire</Link></button>
+        <button className="py-2 px-5 bg-white border rounded-xl hover:scale-110 duration-300" ><Link to="/register">Creer un compte?</Link></button>
       </div>
 
     </div>
 
     <div className="md:block hidden w-1/2">
-      <img className="rounded-2xl" src="https://149494764.v2.pressablecdn.com/wp-content/uploads/2020/11/UPI-Transaction-01-700x700.png"/>
+      <img className="rounded-2xl" src="https://app.kkiapay.me/assets/sign-onboarding.5a6c0965.svg"/>
     </div>
   </div>
 

@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 
 import {BrowserRouter } from 'react-router-dom';
-import UserLogin from './pages/login/userLogin';
+import Login from './pages/login/login';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
 
    <BrowserRouter>
-    <UserLogin />
+    <Login />
   </BrowserRouter>,
   </React.StrictMode>
 );
