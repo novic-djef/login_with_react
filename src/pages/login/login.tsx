@@ -6,7 +6,7 @@ import React from 'react'
 
 export default function Login() {
   return (
-    <div className='grid grid-cols-1 sm:grid-cols-2 h-screen w-full'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 '>
         <div className='hidden sm:block bg-[#00a8de]'>
         <div className="md:col-span-1">
               <div className="mt-4 flex items-center space-x-5 m-4 ">          
@@ -49,7 +49,7 @@ export default function Login() {
               </div>
                 
           </div>
-          <div className="mt-12 flex justify-start pt-56 m-20">
+          <div className="mt-12 flex justify-start pt-46 m-20">
           <p className="text-base text-[#eee] xl:text-center"> Copyrights &copy; 2022 Admin.</p>
         </div>
         </div>
@@ -57,10 +57,12 @@ export default function Login() {
 
 
         </div>
-
-        <div className='bg-gray-100 flex flex-col justify-center'>
-            <form className='max-w-[400px] w-full mx-auto bg-white p-4'>
-                <h2 className='text-4xl font-bold text-center py-6'>Connexion.</h2>
+        
+        <div className='bg-gray-100 flex flex-col-2 justify-center pt-16'>
+            <form className='max-w-[400px] w-full mx-auto  p-4'>
+              <h2 className='text-3xl font-bold  py-6'>Welcome back!</h2>
+                <p>Please enter your credentials to sign in!</p>
+               
                 <div className='flex flex-col py-2'>
                     <label>Email</label>
                     <input className='border p-2' type="email"  placeholder='Entrer Votre Adress Email'/>
@@ -69,13 +71,18 @@ export default function Login() {
                     <label>Password</label>
                     <input className='border p-2' type="password" placeholder='*********' />
                 </div>
-                <button className='border w-full my-5 py-2 bg-[#046db5] hover:bg-indigo-500 text-white'>Connexion</button>
                 <div className='flex justify-between'>
-                    <p className='flex items-center'><input className='mr-2' type="checkbox" /> Se Souvenir De Moi</p>
-                    <p>Creer Un Compte?</p>
+                    <p className='flex items-center'><input className='mr-2' type="checkbox" /> Remenber Me</p>
+                    <p><a className="text-[#046db5]">Forgot Password?</a></p>
                 </div>
+                <button className='border w-full my-5 py-2 bg-[#046db5]  text-white'>Sign In</button>
+                   <div className="flex justify-center ">
+                   Don't have an account yet? <span className="text-[#046db5]"> Sign up </span>
+                   </div>
             </form>
         </div>
+        
     </div>
+
   )
 }
